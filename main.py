@@ -857,20 +857,6 @@ def about(state: State) -> Page:
 
     ])
 
-steps:
-  - name: Check out repository code
-    uses: actions/checkout@v4
-
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.12'
-
-  - name: Install requests and run script
-    run: |
-      pip install requests
-      python your_script.py
-
 
 start_server(
 
